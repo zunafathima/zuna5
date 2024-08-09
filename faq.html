@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>FAQ</title>
+</head>
+<style>
+     * {
+        font-family: "kalam", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-style: normal;
+    }
+    .container h1{
+     color: #043b07;
+    }
+    .navbar {
+        height: 100vh;
+        width: 70px;
+        background-color: #b4735e; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        margin: 0;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: 50%;
+        left: 7px;
+    }
+    .offcanvas{
+        background-color: #b4735e;
+        color: #fff;
+        text-align: center;
+        font-size: 19px;
+    }
+    .accordion {
+      max-width: 800px; 
+      margin: 0 auto; 
+    }
+    .accordion-item {
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom: 1px solid #dee2e6;
+      /* / margin-bottom: 30px; */
+    }
+    .accordion-header .accordion-button {
+       border-radius: 0; 
+    }
+    .content-section p {
+      text-align: center;
+      font-size: 1.1em;
+    }
+    .with-background {
+      background-color: #b4735e;
+      width: -webkit-fill-available;
+      align-items: center;
+    }
+    .container-fluid {
+      flex: 1 0 0%;
+      /* margin: 145px; */
+      color: #fff;
+    } 
+    .navbar-brand{
+    font-size: 1.8rem;
+    margin-left: 20px;
+    margin-top: 10px;
+  } 
+  @media  (min-width:300px) and (max-width:567px){
+    .container{
+      padding-left:80px;
+      font-size: 13px;
+    }
+  }
+  /* @media only screen and (max-width:765px) and (min-width:839px){ */
+   
+  /* } */
+  @media only screen and (max-width:768px) and (min-width:991px){
+    .container{
+      padding-left:80px;
+      font-size: 13px;
+    }
+  }
+  @media  (min-width:567px) and (max-width:768px){
+    .container{
+      padding-left:80px;
+      font-size: 13px;
+    }
+  }
+  @media  (min-width:769px) and (max-width:839px){
+    .container{
+      padding-left: 100px;
+      font-size: 13px;
+    }
+  }
+  
+  /* @media only screen and (max-width:767px){ */
+   
+  /* } */
+</style>
+<body>
+    <nav class="navbar fixed-start">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-book"></i> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="gettinghere.html">Getting Here</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="faq.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="tickets.html">Ticket</a>
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+    <div class="container" >
+      <h1 class="text-center" >Frequently asked questions</h1>
+      <div class="accordion " id="faqAccordion">
+        <div class="accordion-item py-3 ">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              When do you open?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Opening September 22,2024-September30,2024
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Do You Provide Refunds?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Tickets are non-refundable or transferable.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Where is the New York Book Fair in 2024?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              the Park Avenue Armory
+              Smith + Associates -- returns to the Park Avenue Armory in New York City from April 4-7, 2024, for its 64th Edition. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Is the Brooklyn Book Festival free?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Additionally, BKBF presents Bookend events in venues across NYC and on-line, which are overwhelmingly presented free to the public. In the meantime, sign up for our newsletter and stay in the loop with our latest news.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              What is the name of a literary festival held in New York City?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The Brooklyn Book Festival is New York City's largest free literary festival and connects readers with local, national and international authors and publishers during the course of a celebratory literary week.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Where is the biggest book fair?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The Los Angeles Times Festival of Books is a free, public festival celebrating the written word. It is the largest book festival in the United States, drawing approximately 150,000 attendees annually.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Is World Book Fair held every year?
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The Pragati Maidan hosts the World Book Fair every year. This annual (previously biennial) event takes place in winters, and is organized by the National Book Trust (NBT), India.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Is there parking?
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Yes parking is always free! We ask that all festival- goers follow the posted parking signs, and park at the far East end of our lot. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              Are kids allowed?
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Yes! Please have them accompanied by and adult over the age of 18
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              What are your hours of operation?
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sunday, September 29, 2024
+              10am - 6pm.
+
+              Saturday, September 28, 2024
+              10am - 4pm.
+
+              September 22 2024
+              12pm - 5pm.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+              What city reads the most books?
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              2023's Best Cities for Book Lovers
+              New York, NY
+              San Francisco, CA
+              Seattle, WA 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+              What is the most famous book fair in the world?
+            </button>
+          </h2>
+          <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The Frankfurt Book Fair (German: Frankfurter Buchmesse, abbr. FBM) is the world's largest trade fair for books, based on the number of publishing companies represented. The five-day annual event in mid-October is held at the Frankfurt Trade Fair grounds in Frankfurt am Main, Germany.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item py-3">
+          <h2 class="accordion-header" id="headingThirteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+              Which is the oldest book fair in the world?
+            </button>
+          </h2>
+          <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The origins of book fairs can be found in Germany, in Frankfurt and then in Leipzig. In 1462, the first book fair was held in Frankfurt. The rapid influence of the printing press on these fairs is explained by the proximity of Mainz, where Gutenberg worked.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid content-section with-background d-flex  flex-column align-items-center justify-content-center"
+    style="height: 200px; padding-left: 80px;">
+          <!-- <h2>Another Section</h2> -->
+          <p>© The New York Public Library, 2024</p>
+        <p>The New York Public Library is a 501(c)(3) | EIN 13-1887440</p>
+        </div>
+      </div>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>
